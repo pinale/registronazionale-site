@@ -1,0 +1,113 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container my-4" style="width: 33rem;">
+ 
+	<div class="card card-bg">
+	  <div class="card-body">
+		
+		<!-- start reg tite -->
+		<h4 class="card-title mt-3 text-center">Create Account</h4>
+		<p class="text-center">Get started with your free account</p>
+		<p class="text-center">Login via</p>
+		<p class="text-center"> 
+		  <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i></a>
+		  <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-linkedin"></i></a>
+		  <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-github"></i></a>
+		  <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i></a>
+		</p>
+		<p class="text-center">
+		  or register
+		</p>
+		<!-- end reg title-->
+		<p id="responseMessage"></p>
+		<form id="registrationForm">
+		  <div class="form-group input-group">
+			<div class="input-group-prepend">
+			  <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+			</div>
+			<label for="email" class="active">Email</label>
+			<input type="email" class="form-control" name="email" placeholder="inserisci il tuo indirizzo email">
+		  </div>
+		  <div class="form-group input-group">
+			<div class="input-group-prepend">
+			  <span class="input-group-text"> <i class="fa fa-key"></i> </span>
+			</div>
+			<label for="password" class="active">Password</label>
+			<input type="password" data-bs-input class="form-control input-password" name="password"
+			  placeholder="inserisci la tua password">
+			<span class="password-icon" aria-hidden="true">
+			  <svg class="password-icon-visible icon icon-sm">
+				<use href="bootstrap-italia/dist/svg/sprites.svg#it-password-visible"></use>
+			  </svg>
+			  <svg class="password-icon-invisible icon icon-sm d-none">
+				<use href="bootstrap-italia/dist/svg/sprites.svg#it-password-invisible"></use>
+			  </svg>
+			</span>
+		  </div>
+		  <div class="form-group input-group">
+			<div class="input-group-prepend">
+			  <span class="input-group-text"> <i class="fa fa-key"></i> </span>
+			</div>
+			<label for="ripetipassword" class="active">Ripeti Password</label>
+			<input type="password" data-bs-input class="form-control input-password" name="ripetipassword"
+			  placeholder="Ripeti la tua password">
+			<span class="password-icon" aria-hidden="true">
+			  <svg class="password-icon-visible icon icon-sm">
+				<use href="bootstrap-italia/dist/svg/sprites.svg#it-password-visible"></use>
+			  </svg>
+			  <svg class="password-icon-invisible icon icon-sm d-none">
+				<use href="bootstrap-italia/dist/svg/sprites.svg#it-password-invisible"></use>
+			  </svg>
+			</span>
+		  </div>
+		  <div class="form-group input-group">
+			<div class="input-group-prepend">
+			  <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+			</div>
+			<label for="firstname" class="active">Nome</label>
+			<input type="text" class="form-control" name="firstname" placeholder="Nome">
+		  </div>
+		  <div class="form-group input-group">
+			<div class="input-group-prepend">
+			  <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+			</div>
+			<label for="lastname" class="active">Cognome</label>
+			<input type="text" class="form-control" name="lastname" placeholder="Cognome">
+		  </div>
+		  <div class="form-group input-group">
+			<div class="input-group-prepend">
+			  <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+			</div>
+			<label for="city">Citta</label>
+			<input type="text" class="form-control" name="city" placeholder="Citta">
+		  </div>
+		  <div class="form-group input-group">
+			
+		
+			
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="gender" id="genderm" value="m">
+			  <label class="form-check-label active" for="genderm"><i class="fa fa-male"></i></label>
+			</div>
+		  
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="gender" id="genderf" value="f">
+			  <label class="form-check-label active" for="genderf"><i class="fa fa-female"></i></label>
+			</div>
+		  </div>
+		  <div class="form-group input-group">
+			<div class="input-group-prepend">
+			  <span class="input-group-text"> <i class="fa fa-birthday-cake"></i></span>
+			</div>
+			<label class="active" for="birth">Datepicker</label>
+			<input class="form-control" type="date" name="birthdate">
+		  </div>
+		  <div class="form-group"> 
+			<button type="submit" class="btn btn-primary w-100">Create Account </button>
+		  </div>
+		</form>
+	  </div>
+	</div>
+  </div>
+  <!-- end registers -->
+{% endblock %}

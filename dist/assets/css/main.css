@@ -1,0 +1,19 @@
+.evidence-section .section {
+    background-repeat: no-repeat;
+    background-position: top;
+    /*background-size: 100% 300px;*/
+  }
+
+  @media (min-width: 768px) {
+    .search-main {
+        background-image: url(/assets/images/book-bg.png), url(/assets/images/documents-bg.png);
+        background-position: left center, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 193px 357px, 192px 372px;
+    }
+  }
+
+  .search-main {
+      background: #d1e7ff left center no-repeat;
+  }
+  
