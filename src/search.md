@@ -1,6 +1,6 @@
 ---
 title: 'Search'
 layout: 'search.html'
-permalink: 'main/search.html'
+permalink: 'search.html'
 ---
 register

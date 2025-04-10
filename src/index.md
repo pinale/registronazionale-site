@@ -1,7 +1,7 @@
 ---
 title: 'Hello, world'
 layout: 'home.html'
-permalink: 'main/home.html'
+permalink: 'home.html'
 registronazionale:
   eyebrow: 'Digital Marketing is our'
   main: 'Bread & Butter'
