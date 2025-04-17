@@ -17,11 +17,10 @@
               </div>
               <div class="menu-wrapper">
                 <ul class="navbar-nav">
-                  <li class="nav-item active"><a class="nav-link active" href="#" aria-current="page"><span>Link 1 (attivo)</span></a></li>
-                  <li class="nav-item"><a class="nav-link disabled" href="#" aria-disabled="true"><span>Link 2 (disabilitato)</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><span>Il Progetto</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><span>Link 4</span></a></li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item"><a class="nav-link {% if page.url == '/home.html' %}active{% endif %}" href="/home.html" aria-current="page"><span>Home</span></a></li>
+                  <li class="nav-item"><a class="nav-link {% if page.url == '/progetto.html' %}active{% endif %}" href="/progetto.html"><span>Il Progetto</span></a></li>
+                  <li class="nav-item"><a class="nav-link {% if page.url == '/collabora.html' %}active{% endif %}" href="/collabora.html"><span>Collabora</span></a></li>
+                  <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="mainNavDropdown0">
                       <span>Menu Dropdown</span>
                       <svg class="icon icon-xs"><use href="/bootstrap-italia/svg/sprites.svg#it-expand"></use></svg>
@@ -37,7 +36,7 @@
                         </ul>
                       </div>
                     </div>
-                  </li>
+                  </li> -->
                   <!-- megamenu -->
                   <li class="nav-item dropdown megamenu">
                     <button type="button" class="nav-link dropdown-toggle px-lg-2 px-xl-3" data-bs-toggle="dropdown" aria-expanded="false" id="megamenu-2" data-focus-mouse="false">
